@@ -1,0 +1,103 @@
+@font-face {
+    font-family: SF-Arborcrest-Heavy;
+    src: url(fonts/SF-Arborcrest-Heavy/SF\ Arborcrest\ Heavy.ttf);
+}
+@font-face {
+    font-family: Sofia;
+    src: url(fonts/Sofia\ Pro\ Semi\ Bold\ Az.otf);
+}
+.box{
+    position: absolute;
+    width: 1730px;
+    height: 3000px;
+    background-color: #232239;;
+}
+.Cabeçalho{
+    position: relative;
+    background-color: #232239;
+    width: 1730px;
+    height: 94.59px;
+    
+}
+.logo{
+    position: relative;
+    width: 20px;
+    height: 39px;
+    top: -30px;
+    left: 30px;       
+}
+.sub_categoria{
+    font-family: SF-Arborcrest-Heavy;
+    background-color: transparent;
+    border: none;
+    color: #b7b7b8;
+    cursor: pointer;
+    position: relative;
+    left: 500px;
+    top: -28px;
+}
+.Entrar{
+    font-family: Sofia;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    left: 1250px;
+    top: -28px
+}
+.Cadastro{
+    font-family: Sofia;
+    color: white;
+    position: relative;
+    background-color:#d91a1a ;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    left: 1270px;
+    top: -28px;
+    transition: background-color 0.3s ease;
+
+}
+.Cadastro:hover {
+        background-color: #610a0a; /* Cor ao passar o mouse */
+}
+.Cadastro:active {
+        background-color: #e53935; /* Cor ao clicar */
+}
+
+.slidebox{
+    position: absolute;
+    width: 1074px;
+    height: 379px;
+    top: 160px;
+    left: 300px;
+    background-color: #292843;
+}
+.riansp{
+    position: absolute;
+    top: 160px;
+    left: 346px;
+}
+.Cadastro_second{
+    position: absolute;
+    font-family: Sofia;
+    color: white;
+    background-color:#d91a1a ;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    top: 350px;
+    left: 346px;
+    width: 9%;
+    transition: background-color 0.3s ease;
+}
+.Cadastro_second:hover {
+    background-color: #610a0a; /* Cor ao passar o mouse */
+}
+.Cadastro_second:active {
+    background-color: #e53935; /* Cor ao clicar */
+}
+    
