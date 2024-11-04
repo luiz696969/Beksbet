@@ -1,103 +1,49 @@
 @font-face {
-    font-family: SF-Arborcrest-Heavy;
-    src: url(fonts/SF-Arborcrest-Heavy/SF\ Arborcrest\ Heavy.ttf);
+    font-family: 'Sofia';
+    src: url('fonts/Sofia Pro Semi Bold Az.otf') format('opentype');
 }
 @font-face {
-    font-family: Sofia;
-    src: url(fonts/Sofia\ Pro\ Semi\ Bold\ Az.otf);
-}
-.box{
-    position: absolute;
-    width: 1730px;
-    height: 3000px;
-    background-color: #232239;;
-}
-.Cabeçalho{
-    position: relative;
-    background-color: #232239;
-    width: 1730px;
-    height: 94.59px;
-    
-}
-.logo{
-    position: relative;
-    width: 20px;
-    height: 39px;
-    top: -30px;
-    left: 30px;       
-}
-.sub_categoria{
-    font-family: SF-Arborcrest-Heavy;
-    background-color: transparent;
-    border: none;
-    color: #b7b7b8;
-    cursor: pointer;
-    position: relative;
-    left: 500px;
-    top: -28px;
-}
-.Entrar{
-    font-family: Sofia;
-    background-color: transparent;
-    color: white;
-    position: relative;
-    cursor: pointer;
-    border: none;
-    left: 1250px;
-    top: -28px
-}
-.Cadastro{
-    font-family: Sofia;
-    color: white;
-    position: relative;
-    background-color:#d91a1a ;
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-    border: none;
-    left: 1270px;
-    top: -28px;
-    transition: background-color 0.3s ease;
-
-}
-.Cadastro:hover {
-        background-color: #610a0a; /* Cor ao passar o mouse */
-}
-.Cadastro:active {
-        background-color: #e53935; /* Cor ao clicar */
+    font-family: 'SF-Arborcrest-Heavy';
+    src: url('fonts/SF Arborcrest Medium.ttf') format('truetype');
 }
 
-.slidebox{
-    position: absolute;
-    width: 1074px;
-    height: 379px;
-    top: 160px;
-    left: 300px;
-    background-color: #292843;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #232239;
+    height: 8vh;
 }
-.riansp{
-    position: absolute;
-    top: 160px;
-    left: 346px;
+
+.nav-list {
+    list-style: none;
+    display: flex;
 }
-.Cadastro_second{
-    position: absolute;
-    font-family: Sofia;
+
+.subCategoria {
+    position: relative;
+    left: -600px;
+    font-family: 'SF-Arborcrest-Heavy';
+    color: #bfbfbf;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.LoginUser,
+.CadastroUser {
+    font-family: 'Sofia';
     color: white;
-    background-color:#d91a1a ;
-    padding: 10px;
-    border-radius: 15px;
-    cursor: pointer;
-    border: none;
-    top: 350px;
-    left: 346px;
-    width: 9%;
-    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-left: 20px;
 }
-.Cadastro_second:hover {
-    background-color: #610a0a; /* Cor ao passar o mouse */
+
+.CadastroUser{
+    background-color: #d91a1a;
+    padding: 50px;
+
 }
-.Cadastro_second:active {
-    background-color: #e53935; /* Cor ao clicar */
+
+
+.logo {
+    position: relative;
 }
-    
