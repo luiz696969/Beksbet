@@ -4,16 +4,47 @@
 }
 @font-face {
     font-family: 'SF-Arborcrest-Heavy';
-    src: url('fonts/SF Arborcrest Medium.ttf') format('truetype');
+    src: url('fonts/Sofia\ Pro\ Black\ Az.otf') format('truetype');
 }
-
+main{
+    background-color: #232239;
+    border: 2px solid white;
+    background-size: cover;
+    height: 92vh;
+}
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: #232239;
-    height: 8vh;
+    height: 10vh;
 }
+ul{
+    list-style-type: none;
+}
+ul li.item-menu a{
+    font-family: Sofia;
+    color: #bfbfbf;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+   margin-left: 4px;
+    margin-bottom:20px;
+    transition: color 0.2s;
+}
+ul li.item-menu a:hover{
+    color: white;
+}
+ul li.item-menu a .text-link{
+    opacity: 0; /* Torna o texto invisível */
+    color: #bfbfbf; /* Define a cor do texto como branco */
+    transition: opacity 0.3s; /* Transição suave para a opacidade */
+    margin-left: 5px;
+    white-space: nowrap; /* Mantém o texto em uma linha */
+    display: inline-block;
+    font-size: 14px; /* Garante que o texto ocupe espaço ao ser visível */
+}
+
 
 .nav-list {
     list-style: none;
@@ -22,8 +53,9 @@ nav {
 
 .subCategoria {
     position: relative;
-    left: -600px;
+    left: -400px;
     font-family: 'SF-Arborcrest-Heavy';
+    font-size: 13px;
     color: #bfbfbf;
     text-decoration: none;
     margin-left: 20px;
@@ -31,19 +63,76 @@ nav {
 
 .LoginUser,
 .CadastroUser {
+    position: relative;
+    left: 50px;
     font-family: 'Sofia';
     color: white;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .CadastroUser{
     background-color: #d91a1a;
-    padding: 50px;
+    padding: 10px;
+    border-radius: 15px;
 
 }
-
-
-.logo {
+.logo,
+.link-imagem{
     position: relative;
+    width: 150px;
+    left: -60px;
 }
+.item-menu{
+    position: relative;
+    top: 80px;
+    left: -30px;
+    font-size: 20px;
+    background-color: transparent;
+
+}
+
+.btn-expandir{
+    position: fixed;
+    left: 50px;
+    
+}
+
+.btn-expandir > i{
+    background-color: transparent;
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+
+}
+.barra-flexivel{
+    position: fixed;
+    border: 2px solid red;
+    width: 40px;
+    height: 994px;
+    top: 95px;
+    left: 10px;
+    overflow-y: auto;
+    transition: width 0.3s; 
+
+}
+.barra-flexivel:hover{
+    width: 180px;
+}
+
+.barra-flexivel:hover ul li.item-menu a .text-link {
+    opacity: 1;
+    color: #bfbfbf;
+}
+
+
+.barra-flexivel:hover ul li.item-menu a:hover .text-link {
+    color: white;
+    
+}
+
+
+
+
+
+
