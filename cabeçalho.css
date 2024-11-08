@@ -4,14 +4,16 @@
 }
 @font-face {
     font-family: 'SF-Arborcrest-Heavy';
-    src: url('fonts/Sofia\ Pro\ Black\ Az.otf') format('truetype');
+    src: url('fonts/Sofia Pro Black Az.otf') format('truetype');
 }
-main{
+
+main {
     background-color: #232239;
     border: 2px solid white;
     background-size: cover;
-    height: 92vh;
+    height: 80vh;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -19,32 +21,34 @@ nav {
     background: #232239;
     height: 10vh;
 }
-ul{
+
+ul {
     list-style-type: none;
 }
-ul li.item-menu a{
+
+ul li.item-menu a {
     font-family: Sofia;
     color: #bfbfbf;
     text-decoration: none;
     font-size: 15px;
     display: flex;
-   margin-left: 4px;
-    margin-bottom:20px;
+    margin-left: 4px;
+    margin-bottom: 20px;
     transition: color 0.2s;
 }
-ul li.item-menu a:hover{
+
+ul li.item-menu a:hover {
     color: white;
 }
-ul li.item-menu a .text-link{
-    opacity: 0; /* Torna o texto invisível */
-    color: #bfbfbf; /* Define a cor do texto como branco */
-    transition: opacity 0.3s; /* Transição suave para a opacidade */
-    margin-left: 5px;
-    white-space: nowrap; /* Mantém o texto em uma linha */
-    display: inline-block;
-    font-size: 14px; /* Garante que o texto ocupe espaço ao ser visível */
-}
 
+ul li.item-menu a .text-link {
+    color: #bfbfbf;
+    transition: opacity 0.3s;
+    margin-left: 15px;
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 14px;
+}
 
 .nav-list {
     list-style: none;
@@ -71,53 +75,52 @@ ul li.item-menu a .text-link{
     margin-left: 10px;
 }
 
-.CadastroUser{
+.CadastroUser {
     background-color: #d91a1a;
     padding: 10px;
     border-radius: 15px;
-
 }
+
 .logo,
-.link-imagem{
+.link-imagem {
     position: relative;
     width: 150px;
     left: -60px;
 }
-.item-menu{
+
+.item-menu {
     position: relative;
     top: 80px;
     left: -30px;
     font-size: 20px;
     background-color: transparent;
-
 }
 
-.btn-expandir{
+.btn-expandir {
     position: fixed;
     left: 50px;
-    
 }
 
-.btn-expandir > i{
+.btn-expandir > i {
     background-color: transparent;
     color: white;
     font-size: 27px;
     cursor: pointer;
-
 }
-.barra-flexivel{
+
+.barra-flexivel {
     position: fixed;
     border: 2px solid red;
     width: 40px;
     height: 994px;
     top: 95px;
     left: 10px;
-    overflow-y: auto;
-    transition: width 0.3s; 
-
+    overflow: hidden;
+    transition: width 0.3s;
 }
-.barra-flexivel:hover{
-    width: 180px;
+
+.barra-flexivel.expandir {
+    width: 190px;
 }
 
 .barra-flexivel:hover ul li.item-menu a .text-link {
@@ -125,14 +128,70 @@ ul li.item-menu a .text-link{
     color: #bfbfbf;
 }
 
-
 .barra-flexivel:hover ul li.item-menu a:hover .text-link {
     color: white;
-    
 }
 
+.slider {
+    position: absolute;
+    margin: 0 auto;
+    width: 1074px;
+    height: 379px;
+    overflow: hidden;
+    top: 140px;
+    left: 300px;
+}
 
+.slides {
+    position: absolute;
+    width: 1074px; /* para 3 slides */
+    height: 379px;
+    display: flex;
+}
 
+.slides input {
+    display: none;
+}
 
+.slide {
+    width: 379%;
+}
 
+.slide img {
+    width: 1074px;
+}
 
+.manual-navigation {
+    position: absolute;
+    width: 1074px;
+    margin-top: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-manual {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn-manual:not(:last-child) {
+    margin-right: 40px;
+}
+
+.btn-manual:hover {
+    background-color: white;
+}
+
+#radio:checked ~ .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .first {
+    margin-left: -1074px;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -2148px;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,11 +19,10 @@
                 <li><a href="/" class="LoginUser">Entrar</a></li>
                 <li><a href="/" class="CadastroUser">Cadastre-se</a></li>
             </ul>
-            <nav class="MenuLateral">
+            <div class="MenuLateral">
                 <div class="btn-expandir">
-                    <i class="bi bi-list"></i>
+                    <i class="bi bi-list" id="btn-expand"></i>
                 </div>
-                <!-- Barra flexível ao redor do UL completo -->
                 <div class="barra-flexivel">
                     <ul>
                         <li class="item-menu">
@@ -46,10 +45,42 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
+            </div>
         </nav>
     </header>
     <main>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="botao-de-rolagem" id="radio1">
+                <input type="radio" name="botao-de-rolagem" id="radio2">
+                <input type="radio" name="botao-de-rolagem" id="radio3">
+                
+                <div class="slide first">
+                    <img src="images/imagem.png" alt="imagem1">
+                </div>
+                <div class="slide">
+                    <img src="images/Preenchimento de Cor 1.png" alt="imagem2">
+                </div>
+                <div class="slide">
+                    <img src="images/Preenchimento de Cor 2.png" alt="imagem3">
+                </div>
+            </div>
+            
+            <div class="navegation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="btn-manual"></label>
+                <label for="radio2" class="btn-manual"></label>
+                <label for="radio3" class="btn-manual"></label>
+            </div>
+        </div>
     </main>
+
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
